@@ -26,13 +26,17 @@
 
 **（以上是在cloudflare的流程步骤，这里代理先关闭，因为还要申请证书，所以先关闭cloudflare代理伪装域名（如果提前开启cdn代理伪装域名会导致证书无法申请！））**
 * **2：完成上面cloudflare解析工作，开始申请伪装域名的证书，证书我建议选择腾讯云或者阿里云或者其他一年的免费证书也就是自定义证书，当然可以选择3个月有效期的Let's Encrypt证书，但是3个月时间太短了，而且到时候证书到期自带续签得关闭伪装域名的cdn代理，时间短还请频繁申请申请证书，所以建议索性申请一年时间有效期的证书**
+* 
 * **3：下面就是你选择的搭梯子类型；这里我选择：安装Xray-VLESS+WS+TLS(推荐)(可过支持WebSocket的CDN)，这里需要选择支持上cdn的协议。（如下图所示）**
 ![4f086bda4e79729d2bec18afdf80f14](https://user-images.githubusercontent.com/74105070/164358801-2f958bdd-b3a5-4dd5-83df-e25987fccd3b.png)
+
 * **4：提前把申请的证书文件放到指定文件夹下，而且重命名（如下图所示）**
 * ![image](https://user-images.githubusercontent.com/74105070/164359682-7671d0d3-cc7e-4685-b065-d05e19e7b66a.png)
 * 
 * **5：这时候进一步按照命令行安装，会出现如下图所示我们提前上传到文件夹的证书文件。**
 ![090dddaa7aab3d238705883881b83a3](https://user-images.githubusercontent.com/74105070/164359979-448f4860-50db-4bd1-b874-4d55b85a04cb.png)
 
+* **6：下面就是脚本以及安装直至到成功安装梯子，安装完成之后到开测试梯子打开客户端填进去参数测试梯子是否成功。然后到cloudflare开始小云朵代理，过几分钟，cloudflare成功代理我们的伪装域名（如下图所示）**
+![image](https://user-images.githubusercontent.com/74105070/164360836-d73c5f4a-d2e2-4798-9559-a8fc7540af3b.png)
 
-
+* **7：到这里，梯子上cdn是基本完成，但是你会发现无法打开伪装网站，而且提示证书不受浏览器支持（可以翻墙，不影响梯子）这时候你需要到cloudflare**
