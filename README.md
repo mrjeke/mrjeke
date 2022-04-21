@@ -30,7 +30,8 @@
 ![4f086bda4e79729d2bec18afdf80f14](https://user-images.githubusercontent.com/74105070/164358801-2f958bdd-b3a5-4dd5-83df-e25987fccd3b.png)
 * **4：提前把申请的证书文件放到指定文件夹下，而且重命名（如下图所示）**
 * ![image](https://user-images.githubusercontent.com/74105070/164359682-7671d0d3-cc7e-4685-b065-d05e19e7b66a.png)
-* **5：这时候进一步按照命令行安装，会出现如下图所示我们提前上传到文件夹的证书文件。 **
+* 
+* **5：这时候进一步按照命令行安装，会出现如下图所示我们提前上传到文件夹的证书文件。**
 ![090dddaa7aab3d238705883881b83a3](https://user-images.githubusercontent.com/74105070/164359979-448f4860-50db-4bd1-b874-4d55b85a04cb.png)
 
 
