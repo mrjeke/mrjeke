@@ -39,4 +39,14 @@
 * **6：下面就是脚本以及安装直至到成功安装梯子，安装完成之后到开测试梯子打开客户端填进去参数测试梯子是否成功。然后到cloudflare开始小云朵代理，过几分钟，cloudflare成功代理我们的伪装域名（如下图所示）**
 ![image](https://user-images.githubusercontent.com/74105070/164360836-d73c5f4a-d2e2-4798-9559-a8fc7540af3b.png)
 
-* **7：到这里，梯子上cdn是基本完成，但是你会发现无法打开伪装网站，而且提示证书不受浏览器支持（可以翻墙，不影响梯子）这时候你需要到cloudflare**
+* **7：到这里，梯子上cdn是基本完成，但是你会发现无法打开伪装网站，而且提示证书不受浏览器支持（可以翻墙，不影响梯子）这时候你需要还需要到cloudflare设置代理ssl/tls，把您的 SSL/TLS 加密模式为 完全（严格）**
+* ![image](https://user-images.githubusercontent.com/74105070/164361448-000a7cd8-8862-47fd-b261-68cebf75b1d3.png)
+* 
+* **8：然后点击设置边缘证书，最低 TLS 版本仅允许来自支持所选 TLS 协议版本或更高版本的访问者的 HTTPS 连接为：TLS1.3版本（入下图所示）**
+![image](https://user-images.githubusercontent.com/74105070/164361739-6912f416-1d83-4bd6-8511-06f84567beeb.png)
+
+* **9：如果成功运行cdn cloudflare代理梯子域名，在概述那里会出现：通过 TLS 提供的流量（如下图所示） 否则可能没有成功代理cdn**
+![image](https://user-images.githubusercontent.com/74105070/164362068-0c10afac-ec75-40fe-853a-c8a0e6a76f80.png)
+
+* **10：至此，整个教程完成！**
+
